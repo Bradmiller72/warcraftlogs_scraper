@@ -39,7 +39,7 @@ To run a mass report on debuffs being removed you can add every report id into t
 
 You can then run:
 ```
-python3 create_data_from_raid_id.py
+python3 run_raid_ids.py
 ```
 which will output a large json output with all the debuffs (see data_output/50_output.json). You can then change some values in format_json_to_csv.py to format the json to a csv file (see data_output/50_output.csv).
 
