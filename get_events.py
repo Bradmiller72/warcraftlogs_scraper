@@ -175,18 +175,7 @@ def output_fight_info(event_time, start_time, end_time, friendlies_id, friendlie
                 else:
                     print("At time {:,} {} {} was removed by {} {} on {}".format(time, removed_person, removed_spell, applied_person, applied_spell, enemies_id[target_id]))
 
-if __name__ == "__main__":
-
-    ## Change these:
-    fight_id = "FmvDg9LYyKhx8HMn"
-    boss_only = True
-
-
-
-    r = get_rate_limited("https://classic.warcraftlogs.com:443/v1/report/fights/%s?translate=true&api_key=%s" % (fight_id, api_key))
-    # print(r)
-    r_json = r.json()
-    # print(r_json)
+def generate_id_dicts(r_json):
     friendlies_id = {}
     enemies_id = {}
     friendlies_pet_id = {}
@@ -214,6 +203,22 @@ if __name__ == "__main__":
         # print(friendlies_pet_id)
         # print('here')
         traceback.print_exc()
+
+    return enemies_id, friendlies_id, friendlies_pet_id
+
+if __name__ == "__main__":
+
+    ## Change these:
+    fight_id = "FmvDg9LYyKhx8HMn"
+    boss_only = True
+
+
+
+    r = get_rate_limited("https://classic.warcraftlogs.com:443/v1/report/fights/%s?translate=true&api_key=%s" % (fight_id, api_key))
+
+    r_json = r.json()
+    
+    enemies_id, friendlies_id, friendlies_pet_id = generate_id_dicts(r_json)
 
     all_events = {}
     for fight in r_json['fights']:

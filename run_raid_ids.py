@@ -1,4 +1,4 @@
-from get_events import split_events_by_time
+from get_events import split_events_by_time, generate_id_dicts
 import requests
 import json
 import traceback
@@ -25,7 +25,6 @@ def increment_removed_list(removed_list, removed, applied):
 
     return removed_list
 
-
 def start_run(raid_ids):
 
     start = datetime.now()
@@ -44,26 +43,7 @@ def start_run(raid_ids):
 
         r_json = r.json()
 
-        friendlies_id = {}
-        friendlies_pet_id = {}
-        
-        try:
-            for i in r_json['friendlies']:
-                try:
-                    friendlies_id[str(i['id'])] = {'name': i['name'], 'type': i['type']}
-                except:
-                    print(i)
-                    traceback.print_exc()
-
-            for i in r_json['friendlyPets']:
-                try:
-                    friendlies_pet_id[str(i['id'])] = {"name": i['name'], "owner": friendlies_id[str(i['petOwner'])], "type": i['type']}
-                except:
-                    print(i)
-                    traceback.print_exc()
-        except:
-            print(r_json)
-            traceback.print_exc()
+        enemies_id, friendlies_id, friendlies_pet_id = generate_id_dicts(r_json)
 
         try:
             for fight in r_json['fights']:
