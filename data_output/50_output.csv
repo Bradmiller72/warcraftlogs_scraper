@@ -1,0 +1,925 @@
+Debuff,Pushed Off By,Number
+Deep Wound,Mind Flay,453
+Deep Wound,Corruption,314
+Deep Wound,Drain Soul,302
+Deep Wound,Winter's Chill,153
+Deep Wound,Consecration,55
+Deep Wound,Shadowburn,292
+Deep Wound,Vampiric Embrace,20
+Deep Wound,Curse of Agony,37
+Deep Wound,Taunt,213
+Deep Wound,Shadow Vulnerability (ISB),503
+Deep Wound,Rain of Fire,52
+Deep Wound,Siphon Life,24
+Deep Wound,Deep Wound,6
+Deep Wound,Serpent Sting,178
+Deep Wound,Shadow Word: Pain,44
+Deep Wound,Thunder Clap,32
+Deep Wound,Demoralizing Shout,71
+Deep Wound,Sunder Armor,30
+Deep Wound,Curse of Doom,4
+Deep Wound,Blizzard,89
+Deep Wound,Curse of Recklessness,28
+Deep Wound,Stormstrike,121
+Deep Wound,Flame Shock,8
+Deep Wound,Rend,72
+Deep Wound,Flamestrike,33
+Deep Wound,Chilled,2
+Deep Wound,Growl,22
+Deep Wound,Volley,80
+Deep Wound,Gift of Arthas,36
+Deep Wound,Immolate,69
+Deep Wound,Rake,24
+Deep Wound,Faerie Fire (Feral),17
+Deep Wound,Rip,19
+Deep Wound,Screech,3
+Deep Wound,Mortal Strike,92
+Deep Wound,Fireball,33
+Deep Wound,Drain Life,14
+Deep Wound,Armor Shatter,17
+Deep Wound,Curse of Shadow,20
+Deep Wound,Fang of the Crystal Spider,1
+Deep Wound,Hemorrhage,115
+Deep Wound,Judgement of the Crusader,5
+Deep Wound,Hunter's Mark,8
+Deep Wound,Moonfire,35
+Deep Wound,Judgement of Light,6
+Deep Wound,Judgement of Wisdom,11
+Deep Wound,Detect Magic,2
+Deep Wound,Demoralizing Roar,3
+Deep Wound,Shadow Vulnerability,2
+Deep Wound,Rupture,21
+Deep Wound,Hurricane,6
+Deep Wound,Shadow Bolt,10
+Deep Wound,Curse of the Elements,19
+Deep Wound,Deadly Poison IV,26
+Deep Wound,Challenging Roar,2
+Deep Wound,Garrote,8
+Deep Wound,Faerie Fire,12
+Deep Wound,Stun,1
+Deep Wound,Fire Vulnerability,1
+Deep Wound,Ignite,7
+Deep Wound,Devouring Plague,2
+Deep Wound,Challenging Shout,5
+Deep Wound,Puncture Armor,4
+Deep Wound,Curse of Tongues,2
+Deep Wound,Mocking Blow,4
+Deep Wound,Curse of Weakness,5
+Deep Wound,Holy Fire,5
+Deep Wound,Numbing Pain,3
+Deep Wound,Explosive Trap Effect,1
+Deep Wound,Frost Nova,1
+Deep Wound,Insect Swarm,3
+Deep Wound,Weakening Disease,10
+Deep Wound,Skullforge Brand,4
+Corruption,Shadow Vulnerability (ISB),145
+Corruption,Winter's Chill,73
+Corruption,Drain Soul,180
+Corruption,Curse of Recklessness,5
+Corruption,Mind Flay,115
+Corruption,Taunt,72
+Corruption,Hunter's Mark,1
+Corruption,Moonfire,9
+Corruption,Rain of Fire,12
+Corruption,Serpent Sting,44
+Corruption,Demoralizing Shout,14
+Corruption,Flamestrike,14
+Corruption,Curse of Agony,18
+Corruption,Shadowburn,139
+Corruption,Shadow Word: Pain,10
+Corruption,Judgement of Wisdom,5
+Corruption,Consecration,5
+Corruption,Volley,10
+Corruption,Blizzard,15
+Corruption,Mocking Blow,7
+Corruption,Siphon Life,6
+Corruption,Shadow Vulnerability,2
+Corruption,Rend,10
+Corruption,Curse of the Elements,7
+Corruption,Drain Life,11
+Corruption,Immolate,12
+Corruption,Rip,4
+Corruption,Gift of Arthas,9
+Corruption,Thunder Clap,19
+Corruption,Stormstrike,42
+Corruption,Armor Shatter,4
+Corruption,Mortal Strike,17
+Corruption,Vampiric Embrace,4
+Corruption,Hemorrhage,20
+Corruption,Fang of the Crystal Spider,1
+Corruption,Explosive Trap Effect,3
+Corruption,Growl,9
+Corruption,Demoralizing Roar,1
+Corruption,Deadly Poison IV,5
+Corruption,Rake,1
+Corruption,Challenging Roar,1
+Corruption,Garrote,2
+Corruption,Rupture,3
+Corruption,Sunder Armor,4
+Corruption,Faerie Fire (Feral),7
+Corruption,Judgement of the Crusader,2
+Corruption,Hurricane,1
+Corruption,Flare,1
+Corruption,Curse of Shadow,3
+Corruption,Deep Wound,1
+Corruption,Flame Shock,4
+Corruption,Frostbite,3
+Corruption,Insect Swarm,2
+Corruption,Curse of Doom,1
+Curse of Agony,Taunt,7
+Curse of Agony,Curse of Shadow,46
+Curse of Agony,Drain Soul,24
+Curse of Agony,Shadow Vulnerability (ISB),27
+Curse of Agony,Winter's Chill,11
+Curse of Agony,Mind Flay,24
+Curse of Agony,Corruption,13
+Curse of Agony,Curse of Recklessness,20
+Curse of Agony,Rend,2
+Curse of Agony,Curse of the Elements,21
+Curse of Agony,Serpent Sting,19
+Curse of Agony,Immolate,10
+Curse of Agony,Curse of Tongues,3
+Curse of Agony,Frostbite,1
+Curse of Agony,Growl,2
+Curse of Agony,Poison,1
+Curse of Agony,Gift of Arthas,1
+Curse of Agony,Mortal Strike,6
+Curse of Agony,Curse of Doom,6
+Curse of Agony,Shadowburn,12
+Curse of Agony,Volley,3
+Curse of Agony,Rain of Fire,1
+Curse of Agony,Blizzard,2
+Curse of Agony,Demoralizing Shout,2
+Curse of Agony,Shadow Word: Pain,2
+Curse of Agony,Hunter's Mark,1
+Curse of Agony,Rip,1
+Curse of Agony,Stormstrike,4
+Curse of Agony,Vampiric Embrace,3
+Curse of Agony,Numbing Pain,1
+Curse of Agony,Hemorrhage,1
+Curse of Agony,Faerie Fire (Feral),1
+Curse of Agony,Mocking Blow,1
+Curse of Agony,Consecration,1
+Curse of Agony,Drain Life,1
+Curse of Agony,Siphon Life,2
+Curse of Agony,Moonfire,1
+Shadow Vulnerability (ISB),Mind Flay,56
+Shadow Vulnerability (ISB),Shadow Vulnerability,3
+Shadow Vulnerability (ISB),Shadow Vulnerability (ISB),1185
+Shadow Vulnerability (ISB),Deep Wound,9
+Shadow Vulnerability (ISB),Shadowburn,197
+Shadow Vulnerability (ISB),Corruption,6
+Shadow Vulnerability (ISB),Taunt,1
+Shadow Vulnerability (ISB),Shadow Word: Pain,4
+Shadow Vulnerability (ISB),Demoralizing Roar,1
+Shadow Vulnerability (ISB),Drain Soul,3
+Shadow Vulnerability (ISB),Sunder Armor,1
+Shadow Vulnerability (ISB),Winter's Chill,1
+Shadow Vulnerability (ISB),Mortal Strike,2
+Shadow Vulnerability (ISB),Blizzard,1
+Shadow Word: Pain,Frost Trap Aura,1
+Shadow Word: Pain,Shadow Vulnerability (ISB),28
+Shadow Word: Pain,Thunder Clap,4
+Shadow Word: Pain,Curse of Recklessness,2
+Shadow Word: Pain,Corruption,24
+Shadow Word: Pain,Rend,5
+Shadow Word: Pain,Drain Soul,23
+Shadow Word: Pain,Winter's Chill,14
+Shadow Word: Pain,Flare,1
+Shadow Word: Pain,Mind Flay,36
+Shadow Word: Pain,Sunder Armor,1
+Shadow Word: Pain,Demoralizing Shout,4
+Shadow Word: Pain,Shadow Word: Pain,28
+Shadow Word: Pain,Flame Shock,2
+Shadow Word: Pain,Stormstrike,12
+Shadow Word: Pain,Shadowburn,20
+Shadow Word: Pain,Mortal Strike,5
+Shadow Word: Pain,Drain Life,5
+Shadow Word: Pain,Curse of Agony,4
+Shadow Word: Pain,Serpent Sting,13
+Shadow Word: Pain,Moonfire,1
+Shadow Word: Pain,Hemorrhage,3
+Shadow Word: Pain,Explosive Trap Effect,2
+Shadow Word: Pain,Rain of Fire,4
+Shadow Word: Pain,Immolate,1
+Shadow Word: Pain,Blizzard,11
+Shadow Word: Pain,Volley,6
+Shadow Word: Pain,Faerie Fire (Feral),4
+Shadow Word: Pain,Taunt,21
+Shadow Word: Pain,Siphon Life,8
+Shadow Word: Pain,Deadly Poison IV,1
+Shadow Word: Pain,Consecration,2
+Shadow Word: Pain,Frost Nova,1
+Shadow Word: Pain,Challenging Shout,1
+Shadow Word: Pain,Rip,1
+Shadow Word: Pain,Rake,2
+Shadow Word: Pain,Shadow Vulnerability,1
+Shadow Word: Pain,Vampiric Embrace,3
+Shadow Word: Pain,Frostbite,1
+Shadow Word: Pain,Flamestrike,2
+Shadow Word: Pain,Curse of Shadow,1
+Shadow Word: Pain,Gift of Arthas,3
+Shadow Word: Pain,Curse of the Elements,1
+Mind Flay,Vampiric Embrace,23
+Mind Flay,Deep Wound,20
+Mind Flay,Consecration,5
+Mind Flay,Volley,1
+Mind Flay,Corruption,16
+Mind Flay,Drain Soul,16
+Mind Flay,Shadow Word: Pain,50
+Mind Flay,Shadow Vulnerability (ISB),24
+Mind Flay,Curse of Recklessness,7
+Mind Flay,Intercept Stun,1
+Mind Flay,Mind Flay,22
+Mind Flay,Rain of Fire,1
+Mind Flay,Taunt,22
+Mind Flay,Blizzard,3
+Mind Flay,Winter's Chill,13
+Mind Flay,Silence,1
+Mind Flay,Shadowburn,12
+Mind Flay,Curse of the Elements,2
+Mind Flay,Moonfire,1
+Mind Flay,Hurricane,1
+Mind Flay,Stormstrike,3
+Mind Flay,Growl,2
+Mind Flay,Faerie Fire (Feral),1
+Mind Flay,Sunder Armor,4
+Mind Flay,Judgement of the Crusader,1
+Mind Flay,Demoralizing Shout,1
+Mind Flay,Deadly Poison IV,2
+Mind Flay,Immolate,1
+Mind Flay,Curse of Shadow,6
+Mind Flay,Hemorrhage,3
+Mind Flay,Mortal Strike,4
+Mind Flay,Thunder Clap,2
+Mind Flay,Rake,2
+Mind Flay,Skullforge Brand,1
+Mind Flay,Demoralizing Roar,1
+Mind Flay,Hunter's Mark,1
+Winter's Chill,Drain Soul,31
+Winter's Chill,Shadowburn,20
+Winter's Chill,Corruption,20
+Winter's Chill,Consecration,4
+Winter's Chill,Mind Flay,20
+Winter's Chill,Shadow Vulnerability (ISB),25
+Winter's Chill,Deep Wound,2
+Winter's Chill,Stormstrike,11
+Winter's Chill,Taunt,16
+Winter's Chill,Armor Shatter,2
+Winter's Chill,Shadow Word: Pain,5
+Winter's Chill,Volley,6
+Winter's Chill,Rend,3
+Winter's Chill,Serpent Sting,12
+Winter's Chill,Rip,1
+Winter's Chill,Curse of Shadow,1
+Winter's Chill,Rupture,2
+Winter's Chill,Immolate,3
+Winter's Chill,Mortal Strike,3
+Winter's Chill,Hemorrhage,5
+Winter's Chill,Curse of Agony,2
+Winter's Chill,Winter's Chill,2
+Winter's Chill,Rain of Fire,4
+Winter's Chill,Numbing Pain,1
+Winter's Chill,Vampiric Embrace,1
+Winter's Chill,Demoralizing Shout,1
+Winter's Chill,Frost Trap Aura,3
+Winter's Chill,Blizzard,5
+Winter's Chill,Siphon Life,3
+Winter's Chill,Thunder Clap,3
+Winter's Chill,Challenging Shout,4
+Winter's Chill,Gift of Arthas,1
+Winter's Chill,Demoralizing Roar,1
+Rend,Shadow Vulnerability (ISB),9
+Rend,Corruption,11
+Rend,Shadowburn,5
+Rend,Hemorrhage,3
+Rend,Serpent Sting,9
+Rend,Demoralizing Shout,3
+Rend,Drain Soul,10
+Rend,Blizzard,1
+Rend,Deep Wound,14
+Rend,Taunt,2
+Rend,Deadly Poison IV,3
+Rend,Moonfire,1
+Rend,Consecration,2
+Rend,Winter's Chill,2
+Rend,Mortal Strike,2
+Rend,Mind Flay,8
+Rend,Judgement of Wisdom,1
+Rend,Rain of Fire,1
+Rend,Volley,3
+Rend,Rupture,3
+Rend,Gift of Arthas,2
+Rend,Mocking Blow,2
+Rend,Faerie Fire,1
+Rend,Rend,1
+Rend,Numbing Pain,1
+Rend,Rake,1
+Hunter's Mark,Hunter's Mark,396
+Hunter's Mark,Growl,2
+Hunter's Mark,Shadowburn,2
+Hunter's Mark,Banish,1
+Hunter's Mark,Shadow Vulnerability (ISB),1
+Hunter's Mark,Drain Soul,1
+Hunter's Mark,Curse of the Elements,1
+Drain Soul,Mind Flay,3
+Drain Soul,Corruption,3
+Drain Soul,Shadowburn,6
+Drain Soul,Curse of Agony,1
+Drain Soul,Hunter's Mark,1
+Drain Soul,Drain Soul,15
+Drain Soul,Deep Wound,4
+Drain Soul,Taunt,1
+Drain Soul,Hemorrhage,1
+Drain Soul,Shadow Vulnerability (ISB),5
+Drain Soul,Immolate,2
+Drain Soul,Curse of Weakness,1
+Drain Soul,Sunder Armor,2
+Drain Soul,Drain Life,2
+Drain Soul,Growl,1
+Cone of Cold,Cone of Cold,260
+Cone of Cold,Challenging Shout,5
+Cone of Cold,Hamstring,2
+Cone of Cold,Sunder Armor,2
+Cone of Cold,Volley,24
+Cone of Cold,Earthbind,4
+Cone of Cold,Blizzard,16
+Cone of Cold,Frostbolt,3
+Cone of Cold,Wing Clip,1
+Cone of Cold,Crippling Poison,1
+Cone of Cold,Frost Nova,2
+Cone of Cold,Piercing Howl,9
+Cone of Cold,Deep Wound,3
+Cone of Cold,Flamestrike,2
+Cone of Cold,Frostbite,2
+Frost Nova,Hurricane,5
+Frost Nova,Deep Wound,7
+Frost Nova,Cone of Cold,55
+Frost Nova,Blizzard,22
+Frost Nova,Challenging Shout,7
+Frost Nova,Wing Clip,2
+Frost Nova,Shadow Vulnerability,2
+Frost Nova,Frost Nova,219
+Frost Nova,Demoralizing Shout,4
+Frost Nova,Rain of Fire,8
+Frost Nova,Sunder Armor,2
+Frost Nova,Frostbite,1
+Frost Nova,Frostbolt,3
+Frost Nova,Flamestrike,11
+Frost Nova,Immolate,1
+Frost Nova,Volley,8
+Frost Nova,Kidney Shot,1
+Frost Nova,Charge Stun,2
+Frost Nova,Winter's Chill,1
+Frost Nova,War Stomp,1
+Flare,Deep Wound,3
+Flare,Rain of Fire,1
+Flare,Flare,4
+Flare,Shadow Vulnerability (ISB),1
+Flare,Flamestrike,1
+Flare,Mind Flay,1
+Flare,Shadowburn,1
+Volley,Sunder Armor,2
+Volley,Blizzard,25
+Volley,Flamestrike,3
+Volley,Rain of Fire,7
+Volley,Deep Wound,11
+Volley,Mind Flay,1
+Volley,Volley,1
+Volley,Serpent Sting,3
+Volley,Explosive Trap Effect,1
+Volley,Taunt,1
+Volley,Gift of Arthas,1
+Rain of Fire,Rain of Fire,26
+Rain of Fire,Volley,39
+Rain of Fire,Blizzard,62
+Rain of Fire,Deep Wound,11
+Rain of Fire,Corruption,1
+Rain of Fire,Mortal Strike,2
+Rain of Fire,Hurricane,5
+Rain of Fire,Hunter's Mark,1
+Rain of Fire,Sunder Armor,4
+Rain of Fire,Flamestrike,10
+Rain of Fire,Fire Vulnerability,1
+Rain of Fire,Consecration,3
+Rain of Fire,Frost Nova,1
+Rain of Fire,Challenging Shout,1
+Rain of Fire,Mind Flay,2
+Rain of Fire,Frostbite,3
+Rain of Fire,Winter's Chill,2
+Rain of Fire,Fireball,1
+Rain of Fire,Rend,2
+Rain of Fire,Curse of Shadow,2
+Rain of Fire,Taunt,1
+Rain of Fire,Demoralizing Shout,1
+Rain of Fire,Growl,1
+Blizzard,Moonfire,1
+Blizzard,Frost Trap Aura,5
+Blizzard,Mind Flay,5
+Blizzard,Demoralizing Shout,6
+Blizzard,Rain of Fire,98
+Blizzard,Taunt,3
+Blizzard,Blizzard,98
+Blizzard,Banish,4
+Blizzard,Curse of Agony,3
+Blizzard,Deep Wound,21
+Blizzard,Flamestrike,24
+Blizzard,Volley,53
+Blizzard,Challenging Shout,4
+Blizzard,Explosive Trap Effect,9
+Blizzard,Corruption,5
+Blizzard,Gift of Arthas,1
+Blizzard,Immolate,1
+Blizzard,Serpent Sting,1
+Blizzard,Winter's Chill,26
+Blizzard,Frostbite,1
+Blizzard,Rupture,1
+Blizzard,Consecration,15
+Blizzard,Curse of the Elements,1
+Blizzard,Hemorrhage,2
+Blizzard,Flame Shock,1
+Blizzard,Sunder Armor,5
+Blizzard,Curse of Weakness,1
+Blizzard,Cone of Cold,3
+Blizzard,Stormstrike,4
+Blizzard,Mortal Strike,2
+Blizzard,Shadowburn,1
+Demoralizing Shout,Demoralizing Shout,865
+Demoralizing Shout,Siphon Life,1
+Demoralizing Shout,Shadow Word: Pain,1
+Demoralizing Shout,Winter's Chill,1
+Demoralizing Shout,Sunder Armor,1
+Shadow Vulnerability,Blizzard,1
+Shadow Vulnerability,Taunt,2
+Shadow Vulnerability,Flamestrike,1
+Shadow Vulnerability,Rain of Fire,3
+Shadow Vulnerability,Shadowburn,1
+Shadow Vulnerability,Sunder Armor,1
+Shadow Vulnerability,Curse of Shadow,1
+Shadow Vulnerability,Corruption,1
+Siphon Life,Corruption,9
+Siphon Life,Demoralizing Shout,1
+Siphon Life,Shadowburn,2
+Siphon Life,Rip,1
+Siphon Life,Deadly Poison IV,2
+Siphon Life,Flamestrike,1
+Siphon Life,Shadow Vulnerability (ISB),11
+Siphon Life,Stormstrike,1
+Siphon Life,Sunder Armor,2
+Siphon Life,Hurricane,1
+Siphon Life,Winter's Chill,6
+Siphon Life,Mind Flay,5
+Siphon Life,Insect Swarm,1
+Siphon Life,Drain Soul,5
+Siphon Life,Serpent Sting,6
+Siphon Life,Rupture,1
+Siphon Life,Taunt,2
+Siphon Life,Immolate,3
+Siphon Life,Mortal Strike,1
+Siphon Life,Shadow Word: Pain,4
+Siphon Life,Deep Wound,2
+Siphon Life,Rend,1
+Siphon Life,Drain Life,1
+Siphon Life,Faerie Fire (Feral),2
+Siphon Life,Curse of Agony,1
+Siphon Life,Blizzard,1
+Curse of Doom,Winter's Chill,2
+Curse of Doom,Corruption,8
+Curse of Doom,Siphon Life,1
+Curse of Doom,Shadow Word: Pain,2
+Curse of Doom,Mind Flay,1
+Curse of Doom,Rend,1
+Curse of Doom,Shadow Vulnerability (ISB),1
+Curse of Doom,Curse of Shadow,4
+Curse of Doom,Drain Soul,1
+Curse of Doom,Serpent Sting,2
+Curse of Doom,Immolate,1
+Curse of Doom,Curse of Recklessness,1
+Curse of Doom,Curse of Agony,1
+Curse of Doom,Mortal Strike,1
+Serpent Sting,Shadow Vulnerability (ISB),15
+Serpent Sting,Curse of Recklessness,1
+Serpent Sting,Mind Flay,16
+Serpent Sting,Drain Soul,17
+Serpent Sting,Shadowburn,9
+Serpent Sting,Blizzard,7
+Serpent Sting,Taunt,6
+Serpent Sting,Consecration,2
+Serpent Sting,Serpent Sting,6
+Serpent Sting,Winter's Chill,17
+Serpent Sting,Corruption,6
+Serpent Sting,Immolate,6
+Serpent Sting,Fang of the Crystal Spider,1
+Serpent Sting,Mortal Strike,1
+Serpent Sting,Hemorrhage,4
+Serpent Sting,Judgement of the Crusader,1
+Serpent Sting,Sunder Armor,2
+Serpent Sting,Volley,1
+Serpent Sting,Deadly Poison IV,4
+Serpent Sting,Siphon Life,5
+Serpent Sting,Rupture,1
+Serpent Sting,Rend,5
+Serpent Sting,Thunder Clap,2
+Serpent Sting,Demoralizing Shout,2
+Serpent Sting,Rain of Fire,3
+Serpent Sting,Stormstrike,11
+Serpent Sting,Curse of Agony,2
+Serpent Sting,Faerie Fire (Feral),2
+Serpent Sting,Insect Swarm,1
+Serpent Sting,Growl,1
+Serpent Sting,Gift of Arthas,2
+Serpent Sting,Curse of the Elements,1
+Serpent Sting,Curse of Tongues,1
+Consecration,Deep Wound,4
+Consecration,Rain of Fire,4
+Consecration,Serpent Sting,1
+Consecration,Volley,4
+Consecration,Consecration,12
+Consecration,Mortal Strike,1
+Consecration,Corruption,2
+Consecration,Shadow Vulnerability (ISB),3
+Consecration,Taunt,1
+Consecration,Drain Soul,1
+Consecration,Blizzard,8
+Consecration,Mind Flay,2
+Consecration,Rend,1
+Consecration,Flamestrike,2
+Shadowburn,Consecration,1
+Shadowburn,Drain Soul,5
+Shadowburn,Deep Wound,1
+Shadowburn,Winter's Chill,2
+Shadowburn,Mortal Strike,1
+Shadowburn,Mind Flay,1
+Flamestrike,Consecration,3
+Flamestrike,Volley,8
+Flamestrike,Blizzard,18
+Flamestrike,Flamestrike,4
+Flamestrike,Explosive Trap Effect,2
+Flamestrike,Rain of Fire,4
+Flamestrike,Deep Wound,3
+Flamestrike,Winter's Chill,1
+Polymorph,Polymorph,15
+Polymorph,Hunter's Mark,1
+Polymorph,Frostbolt,1
+Polymorph,Cone of Cold,1
+Polymorph,Curse of the Elements,1
+Polymorph,Faerie Fire (Feral),1
+Polymorph,Taunt,2
+Polymorph,Intercept Stun,1
+Polymorph,Sunder Armor,12
+Polymorph,Deep Wound,1
+Polymorph,Growl,1
+Blackout,Starfire Stun,1
+Stormstrike,Deep Wound,25
+Stormstrike,Rip,1
+Stormstrike,Faerie Fire (Feral),1
+Stormstrike,Immolate,2
+Stormstrike,Stormstrike,142
+Stormstrike,Shadow Vulnerability (ISB),14
+Stormstrike,Drain Soul,12
+Stormstrike,Mind Flay,4
+Stormstrike,Winter's Chill,3
+Stormstrike,Moonfire,1
+Stormstrike,Deadly Poison IV,1
+Stormstrike,Shadowburn,7
+Stormstrike,Curse of Agony,2
+Stormstrike,Vampiric Embrace,1
+Stormstrike,Corruption,8
+Stormstrike,Hemorrhage,1
+Stormstrike,Taunt,2
+Stormstrike,Volley,2
+Stormstrike,Rain of Fire,4
+Stormstrike,Sunder Armor,1
+Stormstrike,Hunter's Mark,1
+Stormstrike,Gift of Arthas,1
+Stormstrike,Curse of the Elements,1
+Stormstrike,Blizzard,1
+Stormstrike,Curse of Recklessness,1
+Stormstrike,Demoralizing Shout,1
+Stormstrike,Faerie Fire,1
+Frostbite,Frostbite,30
+Frostbite,Frost Nova,6
+Frostbite,Thunder Clap,1
+Frostbite,Mind Flay,1
+Frostbite,Rain of Fire,1
+Frostbite,Taunt,1
+Frostbite,Hemorrhage,1
+Frostbite,Consecration,1
+Frostbite,Shadowburn,2
+Frostbite,Corruption,1
+Frostbite,Moonfire,1
+Gift of Arthas,Gift of Arthas,12
+Gift of Arthas,Shadow Vulnerability (ISB),7
+Gift of Arthas,Winter's Chill,8
+Gift of Arthas,Mortal Strike,2
+Gift of Arthas,Rend,5
+Gift of Arthas,Serpent Sting,5
+Gift of Arthas,Corruption,9
+Gift of Arthas,Demoralizing Shout,1
+Gift of Arthas,Blizzard,2
+Gift of Arthas,Flamestrike,1
+Gift of Arthas,Drain Soul,6
+Gift of Arthas,Hunter's Mark,2
+Gift of Arthas,Immolate,3
+Gift of Arthas,Stormstrike,3
+Gift of Arthas,Rain of Fire,1
+Gift of Arthas,Taunt,2
+Gift of Arthas,Volley,1
+Gift of Arthas,Shadowburn,1
+Gift of Arthas,Shadow Word: Pain,1
+Curse of Shadow,Curse of the Elements,8
+Curse of Shadow,Curse of Shadow,84
+Curse of Shadow,Curse of Agony,21
+Curse of Shadow,Curse of Doom,2
+Curse of the Elements,Curse of the Elements,18
+Curse of the Elements,Curse of Agony,11
+Curse of the Elements,Curse of Weakness,1
+Curse of the Elements,Curse of Recklessness,2
+Curse of the Elements,Curse of Doom,4
+Faerie Fire,Faerie Fire (Feral),25
+Faerie Fire,Faerie Fire,5
+Faerie Fire (Feral),Faerie Fire,19
+Faerie Fire (Feral),Faerie Fire (Feral),92
+Faerie Fire (Feral),Curse of Agony,1
+Earthbind,Cone of Cold,26
+Iron Grenade,Challenging Shout,2
+Frostbolt,Frostbolt,22
+Frostbolt,Cone of Cold,15
+Frostbolt,Piercing Howl,2
+Frostbolt,Hamstring,1
+Frostbolt,Psychic Scream,1
+Frostbolt,Frost Shock,1
+Immolate,Deep Wound,15
+Immolate,Drain Soul,5
+Immolate,Rip,1
+Immolate,Corruption,11
+Immolate,Demoralizing Shout,1
+Immolate,Curse of Agony,2
+Immolate,Immolate,1
+Immolate,Taunt,13
+Immolate,Shadow Vulnerability (ISB),7
+Immolate,Shadowburn,9
+Immolate,Rend,1
+Immolate,Serpent Sting,1
+Immolate,Mind Flay,8
+Immolate,Vampiric Embrace,1
+Immolate,Deadly Poison IV,1
+Immolate,Curse of the Elements,2
+Immolate,Siphon Life,2
+Immolate,Curse of Recklessness,1
+Immolate,Hemorrhage,2
+Immolate,Growl,1
+Immolate,Consecration,2
+Immolate,Stormstrike,3
+Immolate,Rake,1
+Immolate,Winter's Chill,1
+Immolate,Moonfire,4
+Immolate,Challenging Shout,1
+Screech,Deep Wound,1
+Screech,Riposte,1
+Screech,Demoralizing Shout,9
+Screech,Demoralizing Roar,3
+Rake,Immolate,1
+Rake,Serpent Sting,3
+Rake,Mind Flay,1
+Rake,Winter's Chill,1
+Rip,Corruption,1
+Rip,Winter's Chill,1
+Flame Shock,Shadow Vulnerability (ISB),1
+Flame Shock,Taunt,1
+Flame Shock,Curse of Shadow,1
+Flame Shock,Starfire Stun,1
+Flame Shock,Serpent Sting,1
+Flame Shock,Mocking Blow,1
+Touch of Weakness,Corruption,1
+Touch of Weakness,Drain Life,1
+Touch of Weakness,Taunt,1
+Touch of Weakness,Drain Soul,1
+Touch of Weakness,Shadowburn,1
+Curse of Recklessness,Curse of Recklessness,6
+Curse of Recklessness,Curse of Agony,9
+Curse of Recklessness,Curse of Tongues,1
+Curse of Recklessness,Curse of Weakness,3
+Curse of Recklessness,Curse of Shadow,3
+Curse of Recklessness,Curse of Doom,3
+Curse of Recklessness,Curse of the Elements,2
+Fireball,Fireball,1
+Fireball,Shadow Vulnerability (ISB),2
+Fireball,Deep Wound,28
+Fireball,Taunt,5
+Fireball,Intercept Stun,2
+Fireball,Corruption,2
+Fireball,Mind Flay,3
+Fireball,Demoralizing Roar,2
+Fireball,Immolate,1
+Fireball,Drain Soul,2
+Fireball,Shadowburn,3
+Fireball,Consecration,1
+Fireball,Hemorrhage,3
+Fireball,Stormstrike,1
+Fireball,Sunder Armor,1
+Fireball,Faerie Fire (Feral),1
+Thunder Clap,Thunder Clap,67
+Thunder Clap,Taunt,1
+Thunder Clap,Chilled,10
+Thunder Clap,Numbing Pain,1
+Demoralizing Roar,Demoralizing Shout,59
+Demoralizing Roar,Deep Wound,1
+Demoralizing Roar,Demoralizing Roar,3
+Mortal Strike,Mortal Strike,580
+Mortal Strike,Drain Soul,1
+Armor Shatter,Corruption,2
+Armor Shatter,Taunt,8
+Armor Shatter,Drain Soul,2
+Armor Shatter,Shadow Vulnerability,1
+Sunder Armor,Fireball,1
+Sunder Armor,Taunt,1
+Sunder Armor,Drain Soul,1
+Sunder Armor,Shadowburn,1
+Drain Life,Mind Flay,5
+Drain Life,Taunt,3
+Drain Life,Drain Soul,6
+Drain Life,Shadowburn,3
+Drain Life,Deep Wound,1
+Drain Life,Curse of Shadow,2
+Drain Life,Curse of Recklessness,1
+Drain Life,Moonfire,1
+Drain Life,Drain Life,1
+Judgement of Wisdom,Judgement of the Crusader,1
+Judgement of Wisdom,Judgement of Wisdom,3
+Hemorrhage,Rain of Fire,1
+Hemorrhage,Deep Wound,28
+Hemorrhage,Hemorrhage,62
+Hemorrhage,Shadow Vulnerability (ISB),22
+Hemorrhage,Rend,2
+Hemorrhage,Corruption,28
+Hemorrhage,Shadowburn,12
+Hemorrhage,Consecration,2
+Hemorrhage,Drain Soul,10
+Hemorrhage,Taunt,9
+Hemorrhage,Stormstrike,11
+Hemorrhage,Curse of the Elements,6
+Hemorrhage,Blizzard,4
+Hemorrhage,Winter's Chill,10
+Hemorrhage,Sunder Armor,2
+Hemorrhage,Faerie Fire (Feral),4
+Hemorrhage,Volley,1
+Hemorrhage,Rupture,2
+Hemorrhage,Demoralizing Shout,2
+Hemorrhage,Siphon Life,2
+Hemorrhage,Mortal Strike,13
+Hemorrhage,Immolate,1
+Hemorrhage,Puncture Armor,3
+Hemorrhage,Mind Flay,8
+Hemorrhage,Curse of Recklessness,2
+Hemorrhage,Mocking Blow,1
+Hemorrhage,Hunter's Mark,2
+Hemorrhage,Curse of Shadow,3
+Hemorrhage,Moonfire,1
+Hemorrhage,Thunder Clap,2
+Hemorrhage,Chilled,1
+Moonfire,Demoralizing Shout,1
+Moonfire,Shadowburn,5
+Moonfire,Corruption,2
+Moonfire,Serpent Sting,1
+Moonfire,Drain Soul,2
+Moonfire,Winter's Chill,2
+Moonfire,Mind Flay,2
+Moonfire,Volley,2
+Moonfire,Hurricane,1
+Moonfire,Devouring Plague,1
+Moonfire,Growl,1
+Moonfire,Siphon Life,1
+Moonfire,Hemorrhage,1
+Moonfire,Moonfire,1
+Judgement of the Crusader,Judgement of Wisdom,2
+Judgement of the Crusader,Judgement of the Crusader,5
+Banish,Taunt,2
+Explosive Trap Effect,Deep Wound,3
+Explosive Trap Effect,Blizzard,2
+Explosive Trap Effect,Explosive Trap Effect,1
+Piercing Howl,Cone of Cold,5
+Piercing Howl,Hurricane,8
+Piercing Howl,Piercing Howl,7
+Piercing Howl,Hamstring,1
+Intimidating Shout,Winter's Chill,1
+Intimidating Shout,Cone of Cold,2
+Garrote,Mortal Strike,1
+Garrote,Moonfire,1
+Garrote,Shadowburn,1
+Garrote,Corruption,1
+Garrote,Flamestrike,1
+Garrote,Taunt,3
+Garrote,Shadow Word: Pain,1
+Garrote,Serpent Sting,4
+Garrote,Shadow Vulnerability (ISB),4
+Garrote,Immolate,1
+Garrote,Sunder Armor,1
+Garrote,Siphon Life,1
+Garrote,Gift of Arthas,1
+Garrote,Volley,1
+Garrote,Consecration,1
+Curse of Tongues,Curse of Agony,3
+Curse of Tongues,Curse of Recklessness,2
+Curse of Tongues,Curse of Tongues,1
+Curse of Tongues,Curse of the Elements,1
+Rupture,Winter's Chill,2
+Rupture,Faerie Fire,1
+Rupture,Rake,1
+Rupture,Gift of Arthas,1
+Shadow Bolt,Deep Wound,6
+Shadow Bolt,Mortal Strike,1
+Shadow Bolt,Corruption,3
+Shadow Bolt,Faerie Fire,1
+Shadow Bolt,Shadow Vulnerability (ISB),3
+Shadow Bolt,Rend,1
+Entrapment,Frost Nova,2
+Frost Trap Aura,Mind Flay,1
+Frost Trap Aura,Deep Wound,1
+Frost Trap Aura,Banish,1
+Frost Trap Aura,Rain of Fire,1
+Frost Trap Aura,Volley,1
+Frost Trap Aura,Corruption,2
+Frost Trap Aura,Frost Trap Aura,6
+Devouring Plague,Corruption,1
+Devouring Plague,Mind Flay,1
+Devouring Plague,Taunt,1
+Devouring Plague,Drain Soul,1
+Deadly Poison IV,Drain Soul,2
+Deadly Poison IV,Shadowburn,1
+Deadly Poison IV,Corruption,1
+Deadly Poison IV,Rend,1
+Deadly Poison IV,Hemorrhage,2
+Deadly Poison IV,Taunt,2
+Deadly Poison IV,Serpent Sting,1
+Deadly Poison IV,Shadow Vulnerability (ISB),1
+Deadly Poison IV,Mind Flay,2
+Deadly Poison IV,Winter's Chill,2
+Growl,Moonfire,1
+Taunt,Serpent Sting,2
+Taunt,Corruption,4
+Taunt,Stormstrike,1
+Taunt,Siphon Life,1
+Taunt,Shadow Vulnerability (ISB),1
+Taunt,Sunder Armor,1
+Taunt,Taunt,1
+Judgement of Light,Judgement of Light,1
+Holy Fire,Mind Flay,3
+Holy Fire,Drain Soul,7
+Holy Fire,Shadow Vulnerability (ISB),6
+Holy Fire,Hunter's Mark,1
+Holy Fire,Taunt,2
+Holy Fire,Shadowburn,2
+Holy Fire,Consecration,2
+Holy Fire,Deep Wound,3
+Holy Fire,Corruption,1
+War Stomp,War Stomp,3
+Curse of Weakness,Curse of Recklessness,1
+Curse of Weakness,Drain Soul,6
+Curse of Weakness,Mind Flay,3
+Curse of Weakness,Shadow Vulnerability (ISB),6
+Curse of Weakness,Shadow Word: Pain,2
+Curse of Weakness,Shadowburn,2
+Curse of Weakness,Curse of Weakness,1
+Curse of Weakness,Rain of Fire,1
+Curse of Weakness,Blizzard,1
+Curse of Weakness,Volley,1
+Curse of Weakness,Mortal Strike,2
+Curse of Weakness,Curse of Agony,1
+Puncture Armor,Siphon Life,1
+Puncture Armor,Faerie Fire (Feral),1
+Fear,Frostbolt,1
+Cheap Shot,Cheap Shot,1
+Kidney Shot,Kidney Shot,1
+Gouge,Frost Nova,1
+Weakened Soul,Serpent Sting,1
+Numbing Pain,Stormstrike,1
+Blast Wave,Cone of Cold,1
+Howl of Terror,Cone of Cold,2
+Thunderclap,Thunderclap,1
+Psychic Scream,Polymorph,1
+Psychic Scream,Frost Trap Aura,4
+Psychic Scream,Shadowburn,1
+Scatter Shot,Kick - Silenced,1
+Frost Shock,Crippling Poison,1
+Frost Shock,Frostbolt,1
+Hamstring,Cone of Cold,1
+Immolation Trap Effect,Gift of Arthas,2
+Weakening Disease,Shadow Vulnerability (ISB),2
+Weakening Disease,Corruption,2
+Weakening Disease,Taunt,2
+Pyroblast,Pyroblast,1
+Hurricane,Blizzard,4
+Hurricane,Hurricane,1
+Wing Clip,Wing Clip,4
+Blind,Wing Clip,1
+Skullforge Brand,Drain Soul,4
+Skullforge Brand,Stormstrike,2
+Skullforge Brand,Thunder Clap,1
+Skullforge Brand,Deep Wound,5
+Skullforge Brand,Shadowburn,1
+Skullforge Brand,Corruption,1
+Skullforge Brand,Serpent Sting,2
+Skullforge Brand,Mind Flay,3
+Skullforge Brand,Curse of Agony,1
+Impact,Thunder Clap,1

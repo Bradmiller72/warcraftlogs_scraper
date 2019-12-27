@@ -1,0 +1,2 @@
+ratelimit==2.2.1
+beautifulsoup4==4.8.2

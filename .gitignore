@@ -1,0 +1,7 @@
+env_vars.txt
+__pycache__/*
+__pycache__
+output.txt
+passwords.yaml
+raid_ids.txt
+.DS_Store
