@@ -12,8 +12,8 @@ api_key = os.environ.get("WARCRAFTLOGS_API_KEY")
 run_local_data = os.environ.get("RUN_LOCAL_DATA", False)
 
 def increment_removed_list(removed_list, removed, applied):
-    applied_spell_name = translate(applied)
-    removed_spell_name = translate(removed)
+    applied_spell_name, applied_spell_duration = translate(applied)
+    removed_spell_name, removed_spell_duration = translate(removed)
 
     if(removed_spell_name not in removed_list):
         removed_list[removed_spell_name] = {}
