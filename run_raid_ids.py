@@ -1,4 +1,4 @@
-from get_events import split_events_by_time, generate_id_dicts
+from get_events import split_events_by_time, generate_id_dicts, get_fight_events
 import requests
 import json
 import traceback
@@ -26,10 +26,7 @@ def increment_removed_list(removed_list, removed, applied):
     return removed_list
 
 def start_run(raid_ids):
-
     start = datetime.now()
-
-    # print(start)
 
     removed_list = {}
 
@@ -39,22 +36,10 @@ def start_run(raid_ids):
 
         print("Starting raid id: %s" % raid_id)
 
-        r = get_rate_limited("https://classic.warcraftlogs.com:443/v1/report/fights/%s?translate=true&api_key=%s" % (raid_id, api_key))
-
-        r_json = r.json()
-
-        enemies_id, friendlies_id, friendlies_pet_id = generate_id_dicts(r_json)
-
-        try:
-            for fight in r_json['fights']:
-                split_event = split_events_by_time(raid_id, fight, api_key, friendlies_id, friendlies_pet_id)
-                for key, value in split_event['events'].items():
-                    removed_list = increment_removed_list(removed_list, value['removedebuff'][0], value['applydebuff'][0])
-        except:
-            print(r_json.keys())
-            traceback.print_exc()
-
-
+        events, enemies_id, friendlies_id, friendlies_pet_id = get_fight_events(raid_id)
+        for key, value in events.items():
+            for key1, value1 in value['events'].items():
+                removed_list = increment_removed_list(removed_list, value1['removedebuff'][0], value1['applydebuff'][0])
 
     print(json.dumps(removed_list, indent=4))
 
