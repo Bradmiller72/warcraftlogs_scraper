@@ -57,8 +57,16 @@ def convert_duration(duration):
     amount = split_duration[0]
     time_frame = split_duration[1]
     if(time_frame == "minutes" or time_frame == "minute"):
-        return int(amount) * 60
+        return int(amount) * 60 * 1000
     elif(time_frame == "seconds" or time_frame == "second"):
-        return int(amount)
+        return int(amount) * 1000
     else:
         raise Exception("This time frame doesnt calculate %s for this amount %s" % (time_frame, amount))
+
+if __name__ == "__main__":
+    temp_table = {}
+    for key, value in guid_table.items():
+        temp_table[key] = {"name": value['name'], "duration": value['duration']*1000}
+
+    with open("wowhead_translations.json", "w") as f:
+        f.write(json.dumps(temp_table))
