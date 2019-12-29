@@ -1,4 +1,4 @@
-from get_events import split_events_by_time, generate_id_dicts, get_fight_events
+from get_events import split_events_by_time, generate_id_dicts, get_fight_events, get_fight_events_local
 import requests
 import json
 import traceback
@@ -9,6 +9,7 @@ from rate_limit import get_rate_limited
 from wowhead_translations import translate
 
 api_key = os.environ.get("WARCRAFTLOGS_API_KEY")
+run_local_data = os.environ.get("RUN_LOCAL_DATA", False)
 
 def increment_removed_list(removed_list, removed, applied):
     applied_spell_name = translate(applied)
@@ -36,7 +37,10 @@ def start_run(raid_ids):
 
         print("Starting raid id: %s" % raid_id)
 
-        events, enemies_id, friendlies_id, friendlies_pet_id = get_fight_events(raid_id)
+        if(run_local_data):
+            events, enemies_id, friendlies_id, friendlies_pet_id = get_fight_events_local(raid_id)
+        else:
+            events, enemies_id, friendlies_id, friendlies_pet_id = get_fight_events(raid_id)
         for key, value in events.items():
             for key1, value1 in value['events'].items():
                 removed_list = increment_removed_list(removed_list, value1['removedebuff'][0], value1['applydebuff'][0])
@@ -48,8 +52,12 @@ def start_run(raid_ids):
     print("End: %s" % end)
 
 if __name__ == "__main__":
-    raid_ids = []
-    with open('test_list.txt', 'r') as f:
-        raid_ids = f.read().split("\n")
+    if(run_local_data):
+        raid_ids = os.listdir("data")
+        start_run(raid_ids)
+    else:
+        raid_ids = []
+        with open('test_list.txt', 'r') as f:
+            raid_ids = f.read().split("\n")
 
-    start_run(raid_ids)
+        start_run(raid_ids)

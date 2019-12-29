@@ -1,0 +1,1 @@
+{"events": [{"timestamp": 10210248, "type": "removedebuff", "sourceID": 192, "sourceIsFriendly": true, "targetID": 265, "targetIsFriendly": false, "ability": {"name": "", "guid": 12798, "type": 1, "abilityIcon": "ability_warrior_revenge.jpg"}}]}

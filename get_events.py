@@ -2,8 +2,10 @@ import json
 import traceback
 import os
 from rate_limit import get_rate_limited
+import re
 
 api_key = os.environ.get("WARCRAFTLOGS_API_KEY")
+run_local_data = os.environ.get("RUN_LOCAL_DATA", False)
 
 def get_friendly_id(this_id, friendlies_id, friendlies_pet_id) -> str:
     if(this_id in friendlies_id):
@@ -25,21 +27,8 @@ def get_friendly_id_type(this_id, friendlies_id, friendlies_pet_id) -> str:
         print(friendlies_pet_id.keys())
         raise Exception("Id %s was not found in friendlies or pet friendlies id dicts, type" % this_id)
 
-def split_events_by_time(fight_id, fight, api_key, friendlies_id, friendlies_pet_id):
+def split_events_by_time(start_time, end_time, fight, curr_fight_info, friendlies_id, friendlies_pet_id):
     event_time = {}
-    
-    start_time = fight['start_time']
-    end_time = fight['end_time']
-
-    r = get_rate_limited("https://classic.warcraftlogs.com:443/v1/report/events/debuffs/%s?translate=true&start=%s&end=%s&hostility=1&api_key=%s" % (fight_id, start_time, end_time, api_key)) #&sourceid=83
-
-    curr_fight_info = r.json()
-    
-    event_time = {}
-    if 'events' not in curr_fight_info:
-        print(r)
-        # print(r_json)
-        return
 
     for item in curr_fight_info['events']:
         try:
@@ -136,7 +125,7 @@ def output_fight_info(event_time, start_time, end_time, friendlies_id, friendlie
             continue
         if value['removedebuff'] and value['applydebuff'] and value['removedebuff'][0]['spell'] != 'Deep Wound':
             split = key.split("_")
-            time = int(split[0]) - start_time
+            time = int(split[0]) - int(start_time)
             target_id = int(split[1])
             instance_id = None
 
@@ -171,9 +160,9 @@ def output_fight_info(event_time, start_time, end_time, friendlies_id, friendlie
                 applied_spell = value['applydebuff'][num]['spell']
 
                 if(instance_id != None):
-                    print("At time {:,} {} {} was removed by {} {} on {} {}".format(time, removed_person, removed_spell, applied_person, applied_spell, enemies_id[target_id], instance_id))
+                    print("At time {:,} {} {} was removed by {} {} on {} {}".format(time, removed_person, removed_spell, applied_person, applied_spell, enemies_id[str(target_id)], instance_id))
                 else:
-                    print("At time {:,} {} {} was removed by {} {} on {}".format(time, removed_person, removed_spell, applied_person, applied_spell, enemies_id[target_id]))
+                    print("At time {:,} {} {} was removed by {} {} on {}".format(time, removed_person, removed_spell, applied_person, applied_spell, enemies_id[str(target_id)]))
 
 def generate_id_dicts(r_json):
     friendlies_id = {}
@@ -182,7 +171,7 @@ def generate_id_dicts(r_json):
 
 
     for i in r_json['enemies']:
-        enemies_id[i['id']] = i['name']
+        enemies_id[str(i['id'])] = i['name']
 
     try:
         for i in r_json['friendlies']:
@@ -223,12 +212,75 @@ def get_fight_events(fight_id, boss_only=False):
         for fight in r_json['fights']:
             if(fight['boss'] == 0 and boss_only):
                 continue
-            split_event = split_events_by_time(fight_id, fight, api_key, friendlies_id, friendlies_pet_id)
+            
+            start_time = fight['start_time']
+            end_time = fight['end_time']
+
+            r = get_rate_limited("https://classic.warcraftlogs.com:443/v1/report/events/debuffs/%s?translate=true&start=%s&end=%s&hostility=1&api_key=%s" % (fight_id, start_time, end_time, api_key)) #&sourceid=83
+
+            curr_fight_info = r.json()
+            
+            event_time = {}
+            if 'events' not in curr_fight_info:
+                print(r)
+                # print(r_json)
+                continue
+
+            split_event = split_events_by_time(start_time, end_time, fight, curr_fight_info, friendlies_id, friendlies_pet_id)
             events[split_event['id']] = split_event
 
         return events, enemies_id, friendlies_id, friendlies_pet_id
     except:
         print(r_json.keys())
+        traceback.print_exc()
+
+def get_fight_events_local(fight_id, boss_only=False):
+    file_directory = "data/{}".format(fight_id)
+    fights_directory = file_directory + "/fights"
+    
+    with open(file_directory + "/enemies_id.json") as f:
+        enemies_id = json.load(f)
+
+    with open(file_directory + "/friendlies_id.json") as f:
+        friendlies_id = json.load(f)
+
+    with open(file_directory + "/friendlies_pet_id.json") as f:
+        friendlies_pet_id = json.load(f)
+        
+    events = {}
+    try:
+        fights = os.listdir(fights_directory)
+        for fight in fights:
+            groups = re.match("^([0-9]*)_([0-9]*)_([0-9]*)_([0-9]*)_([a-zA-Z0-9\s]*).json$", fight)
+            start_time = groups.group(1)
+            end_time = groups.group(2)
+            boss = int(groups.group(3))
+            fight_id = groups.group(4)
+            name = groups.group(5)
+
+            if(boss == 0 and boss_only):
+                continue
+
+            curr_fight_info = {}
+            with open(fights_directory + "/" + fight) as f:
+                curr_fight_info = json.load(f)
+            
+            event_time = {}
+            if 'events' not in curr_fight_info:
+                print(fights_directory + "/" + fight)
+                continue
+
+            fight_to_send = {
+                "name": name,
+                "id": fight_id,
+                "boss": boss
+            }
+            split_event = split_events_by_time(start_time, end_time, fight_to_send, curr_fight_info, friendlies_id, friendlies_pet_id)
+            events[split_event['id']] = split_event
+            # eturn {"fight": fight['name'], "start_time": start_time, "end_time": end_time, "id": fight['id'], "boss": fight['boss'] == 1, "events": event_time}        
+
+        return events, enemies_id, friendlies_id, friendlies_pet_id
+    except:
         traceback.print_exc()
 
 if __name__ == "__main__":
@@ -237,10 +289,13 @@ if __name__ == "__main__":
     fight_id = "FmvDg9LYyKhx8HMn"
     boss_only = True
 
-    events, enemies_id, friendlies_id, friendlies_pet_id = get_fight_events(fight_id, boss_only)
+    if(run_local_data):
+        events, enemies_id, friendlies_id, friendlies_pet_id = get_fight_events_local(fight_id, boss_only)
+    else:
+        events, enemies_id, friendlies_id, friendlies_pet_id = get_fight_events(fight_id, boss_only)
         
-    for key, value in events.items():
-        print("Fight: %s" % value['fight'])
-        output_fight_info(value['events'], value['start_time'], value['end_time'], friendlies_id, friendlies_pet_id, enemies_id)
-        print()
+    # for key, value in events.items():
+    #     print("Fight: %s" % value['fight'])
+    #     output_fight_info(value['events'], value['start_time'], value['end_time'], friendlies_id, friendlies_pet_id, enemies_id)
+    #     print()
     
