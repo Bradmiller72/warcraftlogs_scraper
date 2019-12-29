@@ -7,7 +7,7 @@ import json
 api_key = os.environ.get("WARCRAFTLOGS_API_KEY")
 
 raid_ids = []
-with open('test_list.txt', 'r') as f:
+with open('raid_list.txt', 'r') as f:
     raid_ids = f.read().split("\n")
 
 raid_directory = "data/{}"

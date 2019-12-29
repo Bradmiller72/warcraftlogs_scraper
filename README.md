@@ -39,7 +39,7 @@ At time 49,787 Pohner's Serpent Sting was removed by Hineko's Drain Soul on Flam
 The timestamp will match what is shown in Warcraft logs where its seconds,milliseconds. If its over 60 seconds the timestamp will show something like 100,000 which actually relates to 1:40:00 in warcraft logs.
 
 
-To run a mass report on debuffs being removed you can add every report id into test_list.txt. Currently there is 50 in there and takes about a half hour to run.
+To run a mass report on debuffs being removed you can add every report id into raid_list.txt. Currently there is 50 in there and takes about a half hour to run.
 
 You can then run:
 ```
@@ -50,7 +50,7 @@ which will output a large json output with all the debuffs (see data_output/50_o
 ## Running with Local Data
 You can do all of the same commands above but with local data if you download it.
 
-To download the data, enter all the raid ids you wish into ```test_list.txt```. Once you do that run ```python3 pull_all_data.py```, which will do the long part of pulling the data and formating it for later use.
+To download the data, enter all the raid ids you wish into ```raid_list.txt```. Once you do that run ```python3 pull_all_data.py```, which will do the long part of pulling the data and formating it for later use.
 
 Once thats done you can set the environment variable ```RUN_LOCAL_DATA``` like this ```export RUN_LOCAL_DATA=True``` and it will allow you to run local data with any of the commands above.
 

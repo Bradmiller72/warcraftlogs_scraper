@@ -57,7 +57,7 @@ if __name__ == "__main__":
         start_run(raid_ids)
     else:
         raid_ids = []
-        with open('test_list.txt', 'r') as f:
+        with open('raid_list.txt', 'r') as f:
             raid_ids = f.read().split("\n")
 
         start_run(raid_ids)
