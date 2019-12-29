@@ -238,25 +238,33 @@ def get_fight_events_local(fight_id, boss_only=False):
     file_directory = "data/{}".format(fight_id)
     fights_directory = file_directory + "/fights"
     
-    with open(file_directory + "/enemies_id.json") as f:
-        enemies_id = json.load(f)
+    try:
+        with open(file_directory + "/enemies_id.json") as f:
+            enemies_id = json.load(f)
 
-    with open(file_directory + "/friendlies_id.json") as f:
-        friendlies_id = json.load(f)
+        with open(file_directory + "/friendlies_id.json") as f:
+            friendlies_id = json.load(f)
 
-    with open(file_directory + "/friendlies_pet_id.json") as f:
-        friendlies_pet_id = json.load(f)
-        
+        with open(file_directory + "/friendlies_pet_id.json") as f:
+            friendlies_pet_id = json.load(f)
+    except:
+        traceback.print_exc()
+        return
+
     events = {}
     try:
         fights = os.listdir(fights_directory)
         for fight in fights:
-            groups = re.match("^([0-9]*)_([0-9]*)_([0-9]*)_([0-9]*)_([a-zA-Z0-9\s]*).json$", fight)
-            start_time = groups.group(1)
-            end_time = groups.group(2)
-            boss = int(groups.group(3))
-            fight_id = groups.group(4)
-            name = groups.group(5)
+            try:
+                groups = re.match("^([0-9]*)_([0-9]*)_([0-9]*)_([0-9]*)_(.*).json$", fight)
+                start_time = groups.group(1)
+                end_time = groups.group(2)
+                boss = int(groups.group(3))
+                fight_id = groups.group(4)
+                name = groups.group(5)
+            except:
+                print(fight)
+                traceback.print_exc()
 
             if(boss == 0 and boss_only):
                 continue
