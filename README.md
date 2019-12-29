@@ -6,8 +6,8 @@ You need python3 to run this, I'm currently using 3.6.
 ## Requirements
 You can pip install the requirements folder.
 
-*ratelimit: Used to enforce a rate limit on warcraft logs api. The api limits to 240 requests/2 mins. I rate limit at 220 every 2 minutes and sleep if it goes over that.
-*beautifulsoup4: This is used to grab report ids and then to grab debuff names from wowhead.
+* **ratelimit**: Used to enforce a rate limit on warcraft logs api. The api limits to 240 requests/2 mins. I rate limit at 220 every 2 minutes and sleep if it goes over that.
+* **beautifulsoup4**: This is used to grab report ids and then to grab debuff names from wowhead.
 
 ## Use
 You need a warcraft logs api key. You can get this by logging into their website and generating one at the bottom of the settings page. Once you have this you can set the environment variable by doing ```export WARCRAFTLOGS_API_KEY=<api_key>```.
