@@ -3,6 +3,7 @@ import traceback
 import os
 from rate_limit import get_rate_limited
 import re
+from wowhead_translations import translate
 
 api_key = os.environ.get("WARCRAFTLOGS_API_KEY")
 run_local_data = os.environ.get("RUN_LOCAL_DATA", False)
@@ -29,7 +30,7 @@ def get_friendly_id_type(this_id, friendlies_id, friendlies_pet_id) -> str:
 
 def split_events_by_time(start_time, end_time, fight, curr_fight_info, friendlies_id, friendlies_pet_id):
     event_time = {}
-
+    current_fight_debuffs = {}
     for item in curr_fight_info['events']:
         try:
             if(item['sourceIsFriendly'] == False):
@@ -45,6 +46,12 @@ def split_events_by_time(start_time, end_time, fight, curr_fight_info, friendlie
                 source_id = str(item['sourceID'])
             else:
                 source_id = str(item['source']['id'])
+
+            if(target_id not in current_fight_debuffs):
+                current_fight_debuffs[target_id] = {
+                    "numDebuffs": 0,
+                    "debuffs": {}
+                }
 
             ## weird scenario where source is unknown, causing failures in fetching the id/pet id, just skipping
             # SKIPPING
@@ -66,11 +73,33 @@ def split_events_by_time(start_time, end_time, fight, curr_fight_info, friendlie
             if(curr_key not in event_time):
                 event_time[curr_key] = {"removedebuff": [], "applydebuff": []}
 
-            spell_name = item['ability']['name']
-            guid = item['ability']['guid']
+
             curr_type = get_friendly_id_type(source_id, friendlies_id, friendlies_pet_id)
 
+            spell_name, duration = translate({
+                "id": item['ability']['guid'],
+                "type": curr_type
+            })
+            # spell_name = item['ability']['name']
+
+            guid = item['ability']['guid']
+
+            debuff_name = "{}_{}".format(guid, source_id)
+
+            #['applydebuff', 'applydebuffstack', 'removedebuff', 'refreshdebuff', 'removedebuffstack']
             if(item['type'] == 'applydebuff'):
+                current_fight_debuffs[target_id]['numDebuffs'] += 1
+                current_fight_debuffs[target_id]['debuffs'][debuff_name] = {
+                    "spell": spell_name,
+                    "duration": duration,
+                    "remaining": duration,
+                    "apply_time": item['timestamp'],
+                    "curr_apply_time": item['timestamp'],
+                    "id": guid,
+                    "source": source_id,
+                    "type": curr_type
+                }
+
                 event_time[curr_key]['applydebuff'].append(
                     {
                         "spell": spell_name,
@@ -80,6 +109,32 @@ def split_events_by_time(start_time, end_time, fight, curr_fight_info, friendlie
                     }
                 )
             elif(item['type'] == 'removedebuff'):
+                current_fight_debuffs[target_id]['numDebuffs'] -= 1
+
+                for key, value in current_fight_debuffs[target_id]['debuffs'].items():
+                    # print((int(item['timestamp']) - int(value['apply_time'])))
+                    value['remaining'] = value['duration'] - (int(item['timestamp']) - int(value['curr_apply_time']))
+                    if(value['remaining'] < 0):
+                        print(spell_name)
+                        print(debuff_name)
+                        print("here")
+                        print(value['duration'])
+                        print(item['timestamp'])
+                        print(value['curr_apply_time'])
+                        print(value['remaining'])
+                deleted_remaining_time = current_fight_debuffs[target_id]['debuffs'][debuff_name]['remaining']
+                print("Deleted remaining time: %s" % deleted_remaining_time)
+                print(current_fight_debuffs[target_id]['debuffs'][debuff_name])
+                
+                del current_fight_debuffs[target_id]['debuffs'][debuff_name]
+                # for key,value in current_fight_debuffs[target_id]['debuffs'].items():
+                #     if(value['remaining'] < deleted_remaining_time):
+                #         print(value['spell'])
+                #         print(value['remaining'])
+
+                # print(current_fight_debuffs[target_id]['debuffs'])
+                import time
+                time.sleep(1)
                 event_time[curr_key]['removedebuff'].append(
                     {
                         "spell": spell_name,
@@ -88,9 +143,26 @@ def split_events_by_time(start_time, end_time, fight, curr_fight_info, friendlie
                         "type": curr_type
                     }
                 )
+            elif(item['type'] == 'applydebuffstack'):
+                current_debuff = current_fight_debuffs[target_id]['debuffs'][debuff_name]
+                current_debuff['remaining'] = current_debuff['duration']
+                current_debuff['curr_apply_time'] = item['timestamp']
+                pass
+            elif(item['type'] == 'removedebuffstack'):
+                current_debuff = current_fight_debuffs[target_id]['debuffs'][debuff_name]
+                current_debuff['remaining'] = current_debuff['duration']
+                current_debuff['curr_apply_time'] = item['timestamp']
+                pass
+            elif(item['type'] == 'refreshdebuff'):
+                current_debuff = current_fight_debuffs[target_id]['debuffs'][debuff_name]
+                current_debuff['remaining'] = current_debuff['duration']
+                current_debuff['curr_apply_time'] = item['timestamp']
+                pass
         except:
             print(item)
+            print("here")
             traceback.print_exc()
+            break
 
     key_to_delete = []
     for key, value in event_time.items():
@@ -108,7 +180,6 @@ def split_events_by_time(start_time, end_time, fight, curr_fight_info, friendlie
             key_to_delete.append(key)
         elif(len(value['removedebuff']) > 1 or len(value['applydebuff']) > 1):
             key_to_delete.append(key)
-
 
     for key in key_to_delete:
         del event_time[key]
